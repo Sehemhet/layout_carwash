@@ -1,0 +1,26 @@
+/* inter-regular (400) - обычный текст */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-v20-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+/* inter-700 - жирный (для обычных заголовков и strong) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/inter-v20-cyrillic_latin-700.woff2') format('woff2');
+}
+
+/* inter-900 - супержирный (отлично подойдет для главного h1 автомойки) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/inter-v20-cyrillic_latin-900.woff2') format('woff2');
+}

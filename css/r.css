@@ -1,0 +1,104 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0; 
+    z-index: 1; 
+}
+
+ul, ol, li, menu {
+    list-style: none;
+    padding-left: 0; 
+    margin: 0;  
+}
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img, picture, video, canvas, svg, iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border:none;
+}
+textarea {
+    resize: vertical; 
+}
+
+/* Защита от багов Safari на iOS для инпутов поиска */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none; /* Убирает уродливый стандартный крестик в инпутах на iPhone */
+}
+mark {
+    background-color: transparent;
+}
+
+time {
+    font-variant-numeric: tabular-nums; 
+}
+
+address {
+    font-style: normal; 
+}
+
+button, summary {
+    cursor: pointer;
+}
+
+iframe {
+    display:block;
+    border:0;
+    width:100%;
+}
+
+:focus-visible {
+    outline: 2px solid #0055ff;
+    outline-offset: 2px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    line-height: 1.2; /* Для заголовков делаем плотнее */
+}
+
+strong, b {
+    font-weight: 700;
+}
+
+h1 { font-size: clamp(1.75rem, 4vw + 1rem, 2.375rem); }
+h2 { font-size: clamp(1.5rem, 3vw + 1rem, 2.125rem); }
+h3 { font-size: clamp(1.25rem, 2.5vw + 1rem, 1.875rem); }
+h4 { font-size: clamp(1.125rem, 2vw + 1rem, 1.625rem); }
+h5 { font-size: clamp(1rem, 1.5vw + 1rem, 1.375rem); }
+h6 { font-size: 1.125rem; }
+
+
+/* * {
+    background-color: rgba(0, 0, 0, 0.1);
+} */

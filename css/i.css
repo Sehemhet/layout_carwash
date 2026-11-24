@@ -1,0 +1,48 @@
+
+.back_page {
+    position:fixed;
+    right: max(16px, calc((100vw - 1084px) / 2));
+    bottom:16px;
+    z-index:1;
+    border-radius:50%;
+}
+.back_page:hover {
+    color: var(--c8);
+}
+
+.logo {
+    position:fixed;
+    left: max(16px, calc((100vw - 1084px) / 2));
+    top:8px;
+    z-index:1;
+    border-radius:50%;
+    z-index:3;
+}
+
+.burger * {
+    transition: all 0.5s ease;
+}
+.burger {
+    top:8px;
+    height:48px;
+    width:48px;
+    padding:8px;
+    position:fixed;
+    display:none;
+    right: max(16px, calc((100vw - 1084px) / 2));
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.lock {overflow: hidden;}
+
+
+
+.s1 {
+    background-size: cover;
+    background-position: center;
+        background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/_1.webp");
+}
